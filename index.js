@@ -126,26 +126,61 @@ atc[4].addEventListener('click', (e)=>{
 // Individual modal button elements
 modalAtc[0].addEventListener('click', (e)=>{
     let id = 0;
+    if(localStorage.getItem('prod1')){
+        localStorage.removeItem('prod1')
+        localStorage.removeItem('p1',p1)
+    }else{
+        localStorage.setItem('prod1',prod1);
+        localStorage.setItem('p1',p1)
+    }
     btnSwap(id);
     alertSwap(id);
 })
 modalAtc[1].addEventListener('click', (e)=>{
     let id = 1;
+    if(localStorage.getItem('prod2')){
+        localStorage.removeItem('prod2')
+        localStorage.removeItem('p2',p2)
+    }else{
+        localStorage.setItem('prod2',prod2);
+        localStorage.setItem('p2',p2)
+    }
     btnSwap(id);
     alertSwap(id);
 })
 modalAtc[2].addEventListener('click', (e)=>{
     let id = 2;
+    if(localStorage.getItem('prod3')){
+        localStorage.removeItem('prod3')
+        localStorage.removeItem('p3',p3)
+    }else{
+        localStorage.setItem('prod3',prod3);
+        localStorage.setItem('p3',p3)
+    }
     btnSwap(id);
     alertSwap(id);
 })
 modalAtc[3].addEventListener('click', (e)=>{
     let id = 3;
+    if(localStorage.getItem('prod4')){
+        localStorage.removeItem('prod4')
+        localStorage.removeItem('p4',p4)
+    }else{
+        localStorage.setItem('prod4',prod4);
+        localStorage.setItem('p4',p4)
+    }
     btnSwap(id);
     alertSwap(id);
 })
 modalAtc[4].addEventListener('click', (e)=>{
     let id = 4;
+    if(localStorage.getItem('prod5')){
+        localStorage.removeItem('prod5')
+        localStorage.removeItem('p5',p5)
+    }else{
+        localStorage.setItem('prod5',prod5);
+        localStorage.setItem('p5',p5)
+    }
     btnSwap(id);
     alertSwap(id);
 })
