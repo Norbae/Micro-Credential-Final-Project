@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norbey Acevedo - Project 1</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="head-container">
+            <nav style="position: relative;" class="navbar">
+                <ul>
+                    <li><a href="./index.html" class='logo' href="">NORBEY & FLANIGAN</a></li>
+                    <li><a href="./index.html/#wardrobes" class="navTab">Wardrobes</a></li>
+                    <li><a href="#sofas" class="navTab">Sofas</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="cartContainer">
+            <h2 class="cartTitle">Shopping Cart</h2>
+
+            <div class="cartItem">
+                <label for=""><b id="disProd1"></b></label>
+                <label for=""><b id="disP1"></b></label>
+                <label class="cartRemove" for=""><b>Qty: 1</b></label>
+            </div>
+            
+            <div class="cartItem">
+                <label for=""><b id="disProd2"></b></label>
+                <label for=""><b id="disP2"></b></label>
+                <label class="cartRemove" for=""><b>Qty: 1</b></label>
+            </div>
+
+            <div class="cartItem">
+                <label for=""><b id="disProd3"></b></label>
+                <label for=""><b id="disP3"></b></label>
+                <label class="cartRemove" for=""><b>Qty: 1</b></label>
+            </div>
+
+            <div class="cartItem">
+                <label for=""><b id="disProd4"></b></label>
+                <label for=""><b id="disP4"></b></label>
+                <label class="cartRemove" for=""><b>Qty: 1</b></label>
+            </div>
+
+            <div class="cartItem">
+                <label for=""><b id="disProd5"></b></label>
+                <label for=""><b id="disP5"></b></label>
+                <label class="cartRemove" for=""><b>Qty: 1</b></label>
+            </div>
+
+        </div>
+
+        <footer class="bottomPanel">
+            <div class="subFooter">
+                <ul>
+                    <li class="footerCategory">Support</li>
+                    <li><a href="" class="footerItem">Contact Us</a></li>
+                    <li><a href="" class="footerItem">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="subFooter">
+                <ul>
+                    <li class="footerCategory">Community</li>
+                    <li><a href="" class="footerItem">Blog</a></li>
+                    <li><a href="" class="footerItem">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="subFooter">
+                <ul>
+                    <li class="footerCategory">Careers</li>
+                    <li><a href="" class="footerItem">Apply Now!</a></li>
+                    <li><a href="" class="footerItem">Affiliate Program</a></li>
+                </ul>
+            </div>
+            <div class="subFooter">
+                <ul>
+                    <li class="footerCategory">Follow Us</li>
+                </ul>
+            </div>
+            <div>
+                <p class="rights">	&#x24B8; 2022 Norbey & Flanigan Inc. by Norbey Acevedo. All Rights Reserved.</p>
+            </div>
+            <div class="socials">
+                <div class="social-slideshow">
+                    <div class="social-wrapper">
+                        <div class="slideSet">
+                            <a href="https://www.facebook.com/" target="blank"><img src="./Images/Logos/fb.png" alt=""></a>
+                            <a href="https://www.instagram.com/norblit/" target="blank"><img src="./Images/Logos/insta.png" alt=""></a>
+                        </div>
+                        <div class="slideSet">
+                            <a href="https://twitter.com/home" target="blank"><img src="./Images/Logos/twitter.png" alt=""></a>
+                            <a href="https://www.linkedin.com/in/norbeya/" target="blank"><img src="./Images/Logos/linkedin.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        let cartItem = document.querySelectorAll('.cartItem')
+
+        window.addEventListener('load',()=>{
+            localStorage.clear()
+        })
+
+        if(localStorage.getItem('prod1')){
+            cartItem[0].style.display = 'flex'
+            disProd1.innerHTML = localStorage.getItem('prod1')
+            disP1.innerHTML = localStorage.getItem('p1')
+        }
+
+        if(localStorage.getItem('prod2')){
+            cartItem[1].style.display = 'flex'
+            disProd2.innerHTML = localStorage.getItem('prod2')
+            disP2.innerHTML = localStorage.getItem('p2')
+        }
+
+        if(localStorage.getItem('prod3')){
+            cartItem[2].style.display = 'flex'
+            disProd3.innerHTML = localStorage.getItem('prod3')
+            disP3.innerHTML = localStorage.getItem('p3')
+        }
+
+        if(localStorage.getItem('prod4')){
+            cartItem[3].style.display = 'flex'
+            disProd4.innerHTML = localStorage.getItem('prod4')
+            disP4.innerHTML = localStorage.getItem('p4')
+        }
+
+        if(localStorage.getItem('prod5')){
+            cartItem[4].style.display = 'flex'
+            disProd5.innerHTML = localStorage.getItem('prod5')
+            disP5.innerHTML = localStorage.getItem('p5')
+        }
+
+    </script>
+</body>
+</html>
